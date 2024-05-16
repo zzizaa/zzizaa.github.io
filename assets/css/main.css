@@ -236,6 +236,20 @@ input, select, textarea {
 		opacity: 1;
 	}
 	
+	@media only screen and (max-width: 767px) {
+		.slider {
+		  aspect-ratio: auto; /* Rimuovi l'aspect ratio */
+		  overflow-x: auto;
+		  scroll-snap-type: none; /* Rimuovi lo snap-scrolling */
+		  flex-wrap: nowrap; /* Impedisci il wrapping delle immagini */
+		}
+	  
+		.slider img {
+		  width: 100%; /* Imposta la larghezza al 100% */
+		  height: auto; /* Imposta l'altezza automaticamente */
+		  object-fit: contain; /* Ridimensiona l'immagine per contenere il contenitore */
+		}
+	}
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
