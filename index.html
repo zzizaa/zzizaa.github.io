@@ -52,11 +52,13 @@
 						<!-- 2D and 3D Projects -->
 							<article id="2d">
 								<h2 class="major">2D Videogames</h2>
-								<div class="buttons">
-									<button onclick="showProject('samurai-shiba')">Samurai Shiba</button>
-									<button onclick="showProject('space-odissey')">2019: A Space Odyssey</button>
-									<button onclick="showProject('showroom')">Interactive Showroom</button>
-								</div>
+								<ul class="actions">
+									<li><a onclick="showProject('samurai-shiba')" class="button">Samurai Shiba</a></li>
+									<li><a onclick="showProject('space-odissey')" class="button">2019: A Space Odyssey</a></li>
+								</ul>
+								<ul class="actions">
+									<li><a onclick="showProject('showroom')" class="button">Interactive Showroom</a></li>
+								</ul>
 								<div id="samurai-shiba" class="project">
 									<hr />
 									<div class="container">
@@ -91,11 +93,16 @@
 										<h3>2019: A Space Odyssey</h3>
 									</div>
 									<span class="image main"><img src="images/ASpaceOdissey/background2.png" alt="" /></span>
-									<p>Samurai Shiba is a 2D platformer developed with other 3 students during the Videogame Design course at Politecnico di Milano.</p>
+									<p>2019: A Space Odyssey is a 2D platform game developed with another student that make the art 
+										during the Videogames Course at Università degli Studi di Udine. 
+										The assignment was to choose a movie and make a game about it and we chose the Stanley Kubrick 
+										masterpiece because it is one of our favourite movie that we have in common.
+										It is my first game made ever, I used Corona Engine and Lua as a programming language and the game was developed for Android Mobile System.
+									</p>
 									<h4>Tools used:</h4>
 									<ul class="icons">
-										<li><span class="icon brands fa-unity" title="Unity"><span class="label">Unity</span></span></li>
-										<li><img src="images/icons8-lua-language-50.png" style="width: 25px; height: 25px;">Lua</li>
+										<li><span class="icon brands fa-android" title="Android"><span class="label">Android</span></span></li>
+										<li><img src="images/icons8-lua-language-50.png" style="width: 25px; height: 25px;"></li>
 									</ul>
 									<section class="slider-container" id="slider2">
 										<div class="slider-wrapper">
@@ -150,10 +157,10 @@
 						<!-- Work -->
 							<article id="ar">
 								<h2 class="major">Augmented Reality</h2>
-								<div class="buttons">
-									<button onclick="showProject('streatwear')">StreatweAR</button>
-									<button onclick="showProject('interior-design')">Interior Design</button>
-								</div>
+								<ul class="actions">
+									<li><a onclick="showProject('streatwear')" class="button">StreatweAR</a></li>
+									<li><a onclick="showProject('interior-design')" class="button">Interior Design</a></li>
+								</ul>
 								<div class="project" id="streatwear">
 									<hr />
 									<div class="container">
@@ -170,17 +177,17 @@
 										<li><span class="icon brands fa-swift" title="Swift"><span class="label">Swift</span></span></li>
 										<li><span class="icon brands fa-apple" title="Apple"><span class="label">Apple</span></span></li>
 									</ul>
-									<section class="slider-container">
+									<section class="slider-container" id="slider2">
 										<div class="slider-wrapper">
 											<div class="slider">
-												<img id="slide-4" src="images/StreatweAR/swARchestopened.png" alt="3D rendering of an imaginary orange planet in space" />
-												<img id="slide-5" src="images/StreatweAR/swARflowers.jpg" alt="3D rendering of an imaginary green planet in space" />
-												<img id="slide-6" src="images/StreatweAR/swARmenu.png" alt="3D rendering of an imaginary blue planet in space" />
+												<img id="slide-4-1" src="images/StreatweAR/swARchestopened.png" alt="Title" />
+												<img id="slide-4-2" src="images/StreatweAR/swARflowers.jpg" alt="Monolit" />
+												<img id="slide-4-3" src="images/StreatweAR/swARmenu.png" alt="Background" />
 											</div>
 											<div class="slider-nav">
-												<a href="#slide-4"></a>
-												<a href="#slide-5"></a>
-												<a href="#slide-6"></a>
+												<a href="#slide-4-1" data-slide="4-1"></a>
+												<a href="#slide-4-2" data-slide="4-2"></a>
+												<a href="#slide-4-3" data-slide="4-3"></a>
 											</div>
 										</div>
 									</section>
@@ -189,27 +196,29 @@
 									<hr />
 									<div class="container">
 										<h3>Interior Design</h3>
-										<a href="https://www.youtube.com/watch?v=bxP1_a2kSHA&ab_channel=Pierpawolff" class="button" target="_blank">VIDEO</a>
+										<a href="https://youtube.com/shorts/CREfhfW2XTA?feature=share" class="button" target="_blank">VIDEO</a>
 									</div>
 									<span class="image main"><img src="images/SamuraiShiba.png" alt="" /></span>
-									<p>Samurai Shiba is a 2D platformer developed with other 3 students during the Videogame Design course at Politecnico di Milano.</p>
+									<p>For my Master Degree in Computer Science I develope an application for Interior Design using the Pass-through option with Meta Quest 2 that permit
+										to use the Visor as an Augmented Reality device. It implements also the hand tracking for all the interaction. 
+									</p>
 									<h4>Tools used:</h4>
 									<ul class="icons">
 										<li><span class="icon brands fa-unity" title="Swift"><span class="label">Unity</span></span></li>
 										<li><span class="icon brands fa-github" title="GitHub"><span class="label">GitHub</span></span></li>
 									</ul>
-									<section class="slider-container">
+									<section class="slider-container" id="slider2">
 										<div class="slider-wrapper">
 											<div class="slider">
-												<img id="slide-7" src="images/Crane.png" alt="3D rendering of an imaginary orange planet in space" />
-												<img id="slide-8" src="images/Monkey.png" alt="3D rendering of an imaginary green planet in space" />
-												<img id="slide-9" src="images/SmallMonkey.png" alt="3D rendering of an imaginary blue planet in space" />
+												<img id="slide-5-1" src="images/ASpaceOdissey/title.png" alt="Title" />
+												<img id="slide-5-2" src="images/ASpaceOdissey/background.png" alt="Monolit" />
+												<img id="slide-5-3" src="images/ASpaceOdissey/background3.png" alt="Background" />
 											</div>
-										</div>
-										<div class="slider-nav">
-											<a href="#slide-7"></a>
-											<a href="#slide-8"></a>
-											<a href="#slide-9"></a>
+											<div class="slider-nav">
+												<a href="#slide-5-1" data-slide="5-1"></a>
+												<a href="#slide-5-2" data-slide="5-2"></a>
+												<a href="#slide-5-3" data-slide="5-3"></a>
+											</div>
 										</div>
 									</section>
 								</div>
@@ -221,19 +230,22 @@
 								<div class="buttons">
 								
 									<ul class="actions">
-										<li><a onclick="showProject('sote')" class="button primary">Signs of the Elements</a></li>
-										<li><a onclick="showProject('sote')" class="button">Room of Innovation</a></li>
+										<li><a onclick="showProject('sote')" class="button">Signs of the Elements</a></li>
+										<li><a onclick="showProject('mediaset')" class="button">Room of Innovation</a></li>
 									</ul>
 									<ul class="actions">
-										<li><a onclick="showProject('sote')" class="button">Virtual Garden</a></li>
-										<li><a onclick="showProject('sote')" class="button">360 Video Viewer</a></li>
+										<li><a onclick="showProject('vrgarden')" class="button">Virtual Garden</a></li>
+										<li><a onclick="showProject('video360')" class="button">360 Video Viewer</a></li>
 									</ul>
 								</div>
 								<div id="sote" class="project">
 									<hr />
 									<div class="container">
 										<h3>Signs of the Elements</h3>
-										<a href="https://youtu.be/bxS_i4T380c?si=mkrn-FH88CsXLHIa" class="button" target="_blank">VIDEO</a>
+										<ul class="actions">
+											<li><a href="https://youtu.be/bxS_i4T380c?si=mkrn-FH88CsXLHIa" class="button" target="_blank">TRAILER</a></li>
+											<li><a href="https://www.youtube.com/watch?v=gfY6PrRTD-E&ab_channel=Pierpawolff" class="button" target="_blank">GAMEPLAY</a></li>
+										</ul>
 									</div>
 									<span class="image main"><img src="images/Sote/Sote_title.png" alt="" /></span>
 									<p>Samurai Shiba is a 2D platformer developed with other 3 students during the Videogame Design course at Politecnico di Milano.</p>
@@ -245,9 +257,99 @@
 									<section class="slider-container" id="slider1">
 										<div class="slider-wrapper">
 											<div class="slider">
-												<img id="slide-1-1" src="images/SamuraiShiba/Crane.png" alt="Fight with the Crane Boss" />
-												<img id="slide-1-2" src="images/SamuraiShiba/Monkey.png" alt="Fight with the Monkey Boss" />
-												<img id="slide-1-3" src="images/SamuraiShiba/SmallMonkey.png" alt="Platform level" />
+												<img id="slide-6-1" src="images/Sote/sotemap.png" alt="Fight with the Crane Boss" />
+												<img id="slide-6-2" src="images/SamuraiShiba/Monkey.png" alt="Fight with the Monkey Boss" />
+												<img id="slide-6-3" src="images/SamuraiShiba/SmallMonkey.png" alt="Platform level" />
+											</div>
+											<div class="slider-nav">
+												<a href="#slide-6-1" data-slide="6-1"></a>
+												<a href="#slide-6-2" data-slide="6-2"></a>
+												<a href="#slide-6-3" data-slide="6-3"></a>
+											</div>
+										</div>
+									</section>
+								</div>
+								<div id="mediaset" class="project">
+									<hr />
+									<div class="container">
+										<h3>Room of innovation</h3>
+										<a href="https://www.youtube.com/watch?v=1OzM9lNV7rY&ab_channel=Pierpawolff" class="button" target="_blank">VIDEO</a>
+									</div>
+									<span class="image main"><img src="images/MediasetVR/mediasetfirst.png" alt="" /></span>
+									<p>Samurai Shiba is a 2D platformer developed with other 3 students during the Videogame Design course at Politecnico di Milano.</p>
+									<h4>Tools used:</h4>
+									<ul class="icons">
+										<li><span class="icon brands fa-unity" title="Unity"><span class="label">Unity</span></span></li>
+										<li><span class="icon brands fa-github" title="GitHub"><span class="label">Github</span></span></li>
+									</ul>
+									<section class="slider-container" id="slider1">
+										<div class="slider-wrapper">
+											<div class="slider">
+												<img id="slide-7-1" src="images/MediasetVR/vrroom.png" alt="Fight with the Crane Boss" />
+												<img id="slide-7-2" src="images/MediasetVR/Grandefratello.png" alt="Fight with the Monkey Boss" />
+												<img id="slide-7-3" src="images/MediasetVR/Palinsesto.png" alt="Platform level" />
+											</div>
+											<div class="slider-nav">
+												<a href="#slide-7-1" data-slide="7-1"></a>
+												<a href="#slide-7-2" data-slide="7-2"></a>
+												<a href="#slide-7-3" data-slide="7-3"></a>
+											</div>
+										</div>
+									</section>
+								</div>
+								<div id="vrgarden" class="project">
+									<hr />
+									<div class="container">
+										<h3>VR Garden</h3>
+									</div>
+									<span class="image main"><img src="images/GardenVR/gardefirst.png" alt="" /></span>
+									<p>This application was developed for a project aimed at elementary school students and consists of a virtual environment 
+										in which the user can visualize a natural environment such as a garden having the size of an ant. 
+										The application was developed using Unity and XR Interaction Toolkit and consists of four different scenarios with different fauna and flora elements.</p>
+									<h4>Tools used:</h4>
+									<ul class="icons">
+										<li><span class="icon brands fa-unity" title="Unity"><span class="label">Unity</span></span></li>
+										<li><span class="icon brands fa-github" title="GitHub"><span class="label">Github</span></span></li>
+										<li><span class="icon brands fa-meta" title="MetaQuest3"><span class="label">Meta Quest 3</span></span></li>
+									</ul>
+									<section class="slider-container" id="slider1">
+										<div class="slider-wrapper">
+											<div class="slider">
+												<img id="slide-8-1" src="images/GardenVR/Gardenlevel1.png" alt="Fight with the Crane Boss" />
+												<img id="slide-8-2" src="images/GardenVR/Gardenlevel2.png" alt="Fight with the Monkey Boss" />
+												<img id="slide-8-3" src="images/GardenVR/Gardenlevel3.png" alt="Platform level" />
+												<img id="slide-8-4" src="images/GardenVR/GardenBee.png" alt="Platform level" />
+											</div>
+											<div class="slider-nav">
+												<a href="#slide-8-1" data-slide="8-1"></a>
+												<a href="#slide-8-2" data-slide="8-2"></a>
+												<a href="#slide-8-3" data-slide="8-3"></a>
+												<a href="#slide-8-4" data-slide="8-4"></a>
+											</div>
+										</div>
+									</section>
+								</div>
+								<div id="video360" class="project">
+									<hr />
+									<div class="container">
+										<h3>360 Video Viewer</h3>
+									</div>
+									<span class="image main"><img src="images/Video360/videoui.png" alt="" /></span>
+									<p>the application was developed for Meta Quest devices using Unity and the XR Interaction Toolkit. 
+										The application consists of a virtual environment where it is possible to view 360 videos. 
+										There is an interface with which the user, through the use of controllers, can interact to change videos.</p>
+									<h4>Tools used:</h4>
+									<ul class="icons">
+										<li><span class="icon brands fa-unity" title="Unity"><span class="label">Unity</span></span></li>
+										<li><span class="icon brands fa-github" title="GitHub"><span class="label">Github</span></span></li>
+										<li><span class="icon brands fa-meta" title="MetaQuest3"><span class="label">Meta Quest 3</span></span></li>
+									</ul>
+									<section class="slider-container" id="slider1">
+										<div class="slider-wrapper">
+											<div class="slider">
+												<img id="slide-1-1" src="images/MediasetVR/vrroom.png" alt="Fight with the Crane Boss" />
+												<img id="slide-1-2" src="images/MediasetVR/Grandefratello.png" alt="Fight with the Monkey Boss" />
+												<img id="slide-1-3" src="images/MediasetVR/Palinsesto.png" alt="Platform level" />
 											</div>
 											<div class="slider-nav">
 												<a href="#slide-1-1" data-slide="1-1"></a>
