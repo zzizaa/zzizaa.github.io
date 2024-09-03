@@ -1730,6 +1730,134 @@ input, select, textarea {
 
 		}
 
+/* PROVA */
+
+/* Stile base */
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: white;
+}
+
+.gallery-image {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-image img {
+    height: 297px;
+    width: 528px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+}
+
+.img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 297px;
+    width: 528px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+}
+
+.caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+    height: 297px;
+    width: 528px;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+    transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+}
+
+.img-box:hover {
+    cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+    font-size: 0.8em;
+}
+
+.opacity-low {
+    opacity: 0.5;
+}
+
+/* Media Queries per i dispositivi mobili */
+@media (max-width: 768px) {
+    .gallery-image img {
+        height: 297px;
+        width: 100%; /* L'immagine occupa tutta la larghezza disponibile */
+    }
+
+    .img-box {
+        width: 100%;
+        height: auto; /* Mantiene le proporzioni dell'immagine */
+        margin: 10px 0;
+    }
+
+    .transparent-box {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 1.5em;
+        padding: 20px;
+    }
+
+    .gallery-image {
+        padding: 10px;
+    }
+
+    .gallery-image img {
+        height: 165px;
+    }
+
+    .img-box {
+		overflow: hidden;
+		position: relative;
+		height: 165px; /* Mantieni le dimensioni originali */
+		width: 530px;
+	}
+	
+	.img-box img {
+		width: 100%;
+		height: 100%;
+		transform: scale(1.0);
+		transition: transform 0.4s ease;
+	}
+}
+
 /* Footer */
 
 	#footer {
